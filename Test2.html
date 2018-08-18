@@ -1,0 +1,115 @@
+<!Document type HTML>
+<html>
+<head>
+
+<title>HealthCenter</title>
+
+<style type="text/css">
+
+	div.blk1 { width: 60%; height: 15%; float: left; background-color: #81F7D8}
+	div.blk2 { width: 60%; height: 85%; float: left; background-color: #CEF6EC}
+	div.sig1 { width: 40%; height: 15%; float: left; background-color: #81F7D8}
+	div.new1 { width: 40%; height: 85%; float: left; background-color: #CEF6EC}
+
+</style>
+	
+</head>
+
+<body>
+	<form name="registration">
+  	<div class="blk1">
+  		<h1 align = "center">HealthCare Centralization</h1>
+  	</div>
+	<div class="sig1">
+		</br>
+		<table>
+			<tr>
+				<td>
+					<label><b>User Type:</b></label> <br/>
+    				<select name="UserTypeL">
+						<option value="Doctor">Doctor</option>
+						<option value="Patient">Patient</option>
+					</select>
+				</td>
+				<td>
+					<label><b>User Id:</b></label> <br/>
+					<input type="text" name="UserNameL" required="required" />
+				</td>
+				<td>
+					<label><b>Password:</b></label> <br/>
+					<input type="password" name="PasswordL" required="required" />
+				</td>
+				<td>
+					<br/>
+					<button type="button" onclick="alert('SignUp')">LogIn</button>
+				</td>
+			</tr>
+		</table>
+		
+	</div>
+
+	<div class="blk2"></div>
+
+	<div class="new1">
+		<h2>Create New Account</h2>
+
+  		<label><b>User Type:</b></label>
+    	<select name="UserTypeR">
+			<option value="Doctor">Doctor</option>
+			<option value="Patient">Patient</option>
+		</select>  <br/>
+
+		<p>
+			<input type="text" name="FirstNameL" requried="required" placeholder="First Name" />
+
+			<input type="text" name="MiddleNameL" placeholder="Middle Name"  />
+
+			<input type="text" name="LastNameL" required="required" placeholder="Last Name" /> </br>
+		</p>
+
+		<p>
+			<input type="text" name="City" requried="required" placeholder="City" />
+
+			<input type="text" name="State" requried="required" placeholder="Sate" />
+
+			<input type="text" name="Zip" requried="required" placeholder="Zip Code" /> </br>
+		</p>
+		
+		<p>
+			<input type="text" name="Country" requried="required" value="India" />
+		
+			<input type="text" name="Phone" requried="required" placeholder="Mobile#" />
+
+			<input type="text" name="Email" requried="required" placeholder="eMail" /></br>
+		</p>
+		
+		<table>
+			<tr>
+				<td>
+					<label><b>Birth Date:</b></label></br>
+					<input type="date" name="DOB" requried="required" />
+				</td>
+				<td></td> <td></td> <td></td><td></td> <td></td> <td></td>
+				<td>
+					<label><b>Gender:</b></label></br>
+					<input type="radio" name="Gender" value="male" checked="checked" /> Male
+					<input type="radio" name="Gender" value="female" /> Female
+				</td>
+			</tr>			
+		</table>
+
+		<p>
+			By clicking Create Account, you agree to our <a href="test.com">Terms and Conditions</a>. </br>
+			You can very well opt out of our system at any point you wish to.
+		</p>
+		<p>
+			<button type="button">Create Account</button>
+			<input type="button" onclick="input(this.form)" value="Login"/>
+		</p>
+	</div>
+	</form>
+
+	<script src="js/DBConnect.js"></script>
+
+</body>
+</html>
